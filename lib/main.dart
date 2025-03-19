@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:library_app/first.dart';
+import 'package:library_app/login.dart';
+import 'package:library_app/welcome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: First());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Welcome(), 
+    );
   }
 }
