@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:library_app/home.dart';
 import 'package:library_app/signup.dart';
 
 class Login extends StatefulWidget {
@@ -176,6 +177,12 @@ class _LoginState extends State<Login> {
                                   backgroundColor: Colors.green,
                                 ),
                               );
+                                Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>  LibraryHomePage(),
+                                  ),
+                                );
                             }
                           },
                           style: ElevatedButton.styleFrom(

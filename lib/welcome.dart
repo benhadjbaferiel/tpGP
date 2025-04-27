@@ -15,7 +15,7 @@ class _WelcomeState extends State<Welcome> {
     super.initState();
 
     // Après 15 secondes, naviguer vers la page suivante
-    Timer(const Duration(seconds: 15), () {
+    Timer(const Duration(seconds: 30), () {
       _navigateToNextScreen();
     });
   }
